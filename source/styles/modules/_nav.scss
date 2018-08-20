@@ -1,0 +1,63 @@
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+
+.c-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.c-nav__logo {
+  display: flex;
+  align-items: center;
+  padding: size(3);
+  margin: 0;
+}
+
+
+
+.c-nav__list {
+  display: flex;
+  align-items: center;
+  padding: 0 size(3);
+  margin: 0;
+}
+
+
+
+.c-nav__item {
+  list-style: none;
+  margin: 0;
+}
+
+
+
+.c-nav__link {
+  @include transition(default);
+  padding: size(1);
+  text-decoration: none;
+  color: color(brand, dark);
+
+  @include on-event {
+    text-decoration: underline;
+  }
+
+
+
+  &[href^="#account"] {
+    padding-right: size(2);
+    padding-left: size(2);
+    margin-left: size(1);
+    border: 1px solid color(brand, dark);
+    border-radius: 3px;
+
+    @include on-event {
+      text-decoration: none;
+      background-color: color(brand, dark);
+      color: color(brand, light);
+    }
+  }
+}

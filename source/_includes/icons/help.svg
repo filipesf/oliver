@@ -1,0 +1,7 @@
+<svg class="c-icon c-icon--help" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+  <g transform="translate(-1 -1)">
+    <circle cx="8" cy="8" r="8" transform="translate(2 2)" />
+    <path d="M9.09,8.6a2.4,2.4,0,0,1,4.664.8c0,1.6-2.4,2.4-2.4,2.4" transform="translate(-1.418 -0.999)" />
+    <line transform="translate(10 14)" />
+  </g>
+</svg>

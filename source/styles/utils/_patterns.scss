@@ -1,0 +1,20 @@
+/* ==========================================================================
+   UI PATTERNS
+   ========================================================================== */
+
+/// @group Patterns
+/// @require {mixin} type-scale
+/// @require {mixin} transition
+/// @require {function} size
+@mixin button($size: default) {
+  @include type-scale(0);
+  @include transition(default);
+  text-decoration: none;
+  cursor: pointer;
+
+  @if $size == large {
+    padding: size(2) size(4);
+  } @else {
+    padding: size(1) size(2);
+  }
+}

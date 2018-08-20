@@ -1,0 +1,87 @@
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+
+.l-details {
+  display: grid;
+  grid-column-gap: size(4);
+  grid-row-gap: size(2);
+  grid-template-columns: auto auto;
+  margin-bottom: size(2);
+}
+
+.f-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-field__labels {
+  margin-top: size(2);
+  display: grid;
+  grid-template-columns: rem(163) rem(100) rem(100);
+}
+
+.c-field__inputs {
+  display: grid;
+  grid-template-columns: rem(155) rem(100) rem(100);
+}
+
+.c-field__inputs {
+  @include type-scale(-2);
+  padding: 0 size(1);
+  color: color(brand, base);
+  border: 1px solid color(decorator, border);
+  border-radius: rem(3);
+  line-height: 1;
+
+  .f-text {
+    border: none;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.f-label {
+  @include type-scale(-2);
+  cursor: pointer;
+}
+
+.f-text {
+  @include type-scale(-2);
+  padding: size(1);
+  color: color(brand, base);
+  border: 1px solid color(decorator, border);
+  border-radius: rem(3);
+  line-height: 1;
+
+  @include placeholder {
+    color: color(decorator, text);
+  }
+
+  &:focus {
+    border-color: color(brand, base);
+  }
+
+  &[type="email"] {
+    width: rem(316);
+  }
+}
+
+.c-btn {
+  @include type-scale(0);
+  @include transition(default);
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  padding: size(2);
+  border: 0;
+  border-radius: rem(4);
+  background-color: #109e2a;
+  color: white;
+  box-shadow: inset 0 -4px 0 rgba(#000, .2);
+  cursor: pointer;
+
+  @include on-event {
+    background-color: darken(#109e2a, 10%);
+  }
+}

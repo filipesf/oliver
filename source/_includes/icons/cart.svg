@@ -1,0 +1,10 @@
+<svg class="c-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g transform="translate(-331 -175)">
+    <rect fill="transparent" width="24" height="24" transform="translate(331 175)" />
+    <g class="c-icon--cart" transform="translate(334 178)">
+      <ellipse cx="0.727" cy="0.727" rx="0.727" ry="0.727" transform="translate(6.091 14.818)" />
+      <ellipse cx="0.727" cy="0.727" rx="0.727" ry="0.727" transform="translate(14.091 14.818)" />
+      <path d="M1,1H3.909l1.949,9.738a1.455,1.455,0,0,0,1.455,1.171h7.069a1.455,1.455,0,0,0,1.455-1.171L17,4.636H4.636" />
+    </g>
+  </g>
+</svg>

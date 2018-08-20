@@ -1,0 +1,21 @@
+/* ==========================================================================
+   QUOTE
+   ========================================================================== */
+
+.c-quote {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.c-quote__text,
+.c-quote__author {
+  @include type-scale(-1, 0);
+  margin: 0;
+  color: color(brand, base);
+}
+
+.c-quote__text {
+  font-style: italic;
+}

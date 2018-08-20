@@ -1,0 +1,41 @@
+/* ==========================================================================
+   ICONS
+   ========================================================================== */
+
+.c-icon {
+  @include rectangle(rem(24));
+}
+
+
+.c-icon--help,
+.c-icon--checkbox {
+  @include rectangle(rem(16));
+}
+
+.c-icon--help {
+  fill: none;
+  stroke: #0879c9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+
+.c-icon--check {
+  @include rectangle(rem(12));
+  fill: none;
+  stroke: #0879c9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+
+
+
+.c-icon--cart {
+  fill: none;
+  stroke: #0879c9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}

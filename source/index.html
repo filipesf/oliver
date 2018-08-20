@@ -1,0 +1,126 @@
+---
+layout: default
+---
+
+<section class="l-checkout">
+  <form class="l-checkout__form">
+    <hgroup class="l-checkout__headline" >
+      {% include icons/cart.svg %}
+      <h1 class="l-checkout__title">Checkout</h1>
+    </hgroup>
+
+    <hr class="l-checkout__ruler">
+
+    <section class="l-section">
+      <div class="l-section__step">1</div>
+
+      <div class="l-section__content">
+        <h4 class="l-section__title">Choose your plan:</h4>
+
+        <ul class="l-section__plans">
+          <li class="l-section__plan"><input type="radio" name="plan" id="freelancer" checked><label for="freelancer">Freelancer</label></li>
+          <li class="l-section__plan"><input type="radio" name="plan" id="agency"><label for="agency">Agency</label></li>
+          <li class="l-section__plan"><input type="radio" name="plan" id="big-agency"><label for="big-agency">Big Agency</label></li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="l-checkout__ruler">
+
+    <section class="l-section">
+      <div class="l-section__step">2</div>
+
+      <div class="l-section__content">
+        <h4 class="l-section__title">Your personal details:</h4>
+
+        <div class="l-details">
+          <div class="f-field">
+            <label class="f-label" for="first-name">First name</label>
+            <input class="f-text" type="text" id="first-name" placeholder="John" required>
+          </div>
+
+          <div class="f-field">
+            <label class="f-label" for="last-name">Last name</label>
+            <input class="f-text" type="text" id="last-name" placeholder="Doe" required>
+          </div>
+        </div>
+
+          <div class="f-field">
+            <label class="f-label" for="email">Email</label>
+            <input class="f-text" type="email" id="email" placeholder="john.doe@gmail.com" required>
+          </div>
+      </div>
+    </section>
+
+    <hr class="l-checkout__ruler">
+
+    <section class="l-section">
+      <div class="l-section__step">3</div>
+
+      <div class="l-section__content">
+        <h4 class="l-section__title">Payment information:</h4>
+
+        <div class="f-field">
+          <label class="f-label" for="card-holder">Credit card holder</label>
+          <input class="f-text" type="text" id="card-holder" placeholder="John Doe" required>
+        </div>
+
+        <div class="f-field f-field--card">
+          <div class="c-field__labels">
+            <label class="f-label" for="card-number">Credit card number</label>
+            <label class="f-label" for="expiry-date">Expiry date</label>
+            <label class="f-label" for="security-number">Security code</label>
+          </div>
+
+          <div class="c-field__inputs">
+            <input class="f-text" type="number" id="card-number" placeholder="0000 0000 0000 0000" required>
+            <input class="f-text" type="text" id="expiry-date" placeholder="dd/yyy" required>
+            <input class="f-text" type="number" id="security-number" placeholder="000" required>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="l-checkout__ruler">
+
+    <div class="l-checkout__confirmation">
+      <span class="l-checkout__help">
+        {% include icons/help.svg %}
+        <span>Need any help? Don’t hesitate to <a href="#">contact support</a>!</span>
+      </span>
+      <span class="l-checkout__privacy">
+        <input type="checkbox" id="privacy">
+        {% include icons/checkbox.svg %}
+        <label for="privacy">Please accept our <a href="#">Privacy Policy</a> to proceed.</label></span>
+    </div>
+
+    <button class="c-btn">Subscribe me to WP Pusher</button>
+  </form>
+
+  <aside class="l-checkout__details">
+    <div class="c-plan">
+      <hgroup class="c-plan__title">
+        <h3 class="c-plan__name">Freelancer</h3>
+        <small class="c-plan__renewal">Automatically renews after 1 year</small>
+      </hgroup>
+
+      <span class="c-plan__price">99</span>
+
+      <ul class="c-plan__features">
+        <li class="c-plan__feature">{% include icons/check.svg %} Use on 5 client sites</li>
+        <li class="c-plan__feature">{% include icons/check.svg %} Private repositories</li>
+        <li class="c-plan__feature">{% include icons/check.svg %} Email support</li>
+      </ul>
+
+      <div class="c-plan__upgrade">
+        <small>Need more client sites?</small>
+        <a class="c-plan__link" href="#">Switch to Agency Plan →</a>
+      </div>
+    </div>
+
+    <blockquote class="c-quote">
+      <p class="c-quote__text">FTP is horrible to deal with. WP Pusher solves that issue, and the customer support is awesome!</p>
+      <strong class="c-quote__author">– Kirk Beard, Freelancer</strong>
+    </blockquote>
+  </aside>
+</section>

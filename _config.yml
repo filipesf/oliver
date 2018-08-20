@@ -1,0 +1,11 @@
+# Content
+title: WP Pusher Checkout – Oliver – Filipe Fernandes
+
+# Files
+source: source
+destination: build
+
+# Assets
+sass:
+  sass_dir: styles
+  style: compressed
