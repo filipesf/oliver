@@ -9,3 +9,9 @@ destination: build
 sass:
   sass_dir: styles
   style: compressed
+
+compress:
+  clippings: all
+  blanklines: false
+  startings: [html, head, body]
+  endings: all
