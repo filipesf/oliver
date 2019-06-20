@@ -226,5 +226,55 @@
   </aside>
 </section>
 
+    <script>
+const $ = document.querySelector.bind(document);
+
+const plans = {
+  freelancer: {
+    id: 'freelancer',
+    name: 'Freelancer',
+    switch: 'agency',
+    upgrade: 'Agency',
+    price: 99,
+    clients: 5,
+  },
+  agency: {
+    id: 'agency',
+    name: 'Agency',
+    switch: 'bigagency',
+    upgrade: 'Big Agency',
+    price: 199,
+    clients: 20,
+  },
+  bigagency: {
+    id: 'bigagency',
+    name: 'Big Agency',
+    switch: false,
+    upgrade: false,
+    price: 499,
+    clients: 100,
+  }
+};
+
+let currentPlan = 'freelancer';
+
+function updatePlan(planName) {
+  currentPlan = planName;
+
+  Object.keys(plans).forEach(function(plan) {
+    if (plans[plan].id === currentPlan) {
+      $(`#${plans[plan].id}`).checked = true;
+      $('.js-plan-info').classList = `c-plan js-plan-info c-plan--${currentPlan}`;
+      $('.js-plan-name').innerHTML = plans[plan].name;
+      $('.js-plan-price').innerHTML = plans[plan].price;
+      $('.js-plan-clients').innerHTML = plans[plan].clients;
+      $('.js-plan-upgrade').innerHTML = plans[plan].upgrade;
+      $('.js-plan-switch').dataset.plan = plans[plan].switch;
+      $('.js-plan-switch').htmlFor = plans[plan].switch;
+    }
+  });
+}
+</script>
+
   </body>
 </html>
