@@ -82,5 +82,46 @@
   @include type-scale(-1);
   display: block;
   font-weight: bold;
+  text-decoration: underline;
   color: color(theme, freelancer);
+  cursor: pointer;
+
+  @include on-event {
+    text-decoration: none;
+  }
+}
+
+.c-plan--agency {
+  .c-plan__name,
+  .c-plan__price,
+  .c-plan__link,
+  .c-icon--check {
+    color: color(theme, agency);
+    stroke: color(theme, agency);
+  }
+
+  .c-plan__feature:first-of-type {
+    font-weight: bold;
+  }
+}
+
+.c-plan--bigagency {
+  .c-plan__name,
+  .c-plan__price,
+  .c-icon--check {
+    color: color(theme, bigagency);
+    stroke: color(theme, bigagency);
+  }
+
+  .c-plan__features {
+    margin-bottom: 0;
+  }
+
+  .c-plan__feature:first-of-type {
+    font-weight: bold;
+  }
+
+  .c-plan__upgrade {
+    display: none;
+  }
 }

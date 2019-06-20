@@ -18,9 +18,18 @@ layout: default
         <h4 class="l-section__title">Choose your plan:</h4>
 
         <ul class="l-section__plans">
-          <li class="l-section__plan"><input type="radio" name="plan" id="freelancer" checked><label for="freelancer">Freelancer</label></li>
-          <li class="l-section__plan"><input type="radio" name="plan" id="agency"><label for="agency">Agency</label></li>
-          <li class="l-section__plan"><input type="radio" name="plan" id="big-agency"><label for="big-agency">Big Agency</label></li>
+          <li class="l-section__plan">
+            <input type="radio" name="plan" id="freelancer" checked>
+            <label for="freelancer" data-plan="freelancer" onclick="updatePlan(this.dataset.plan);">Freelancer</label>
+          </li>
+          <li class="l-section__plan l-section__plan--agency">
+            <input type="radio" name="plan" id="agency">
+            <label for="agency" data-plan="agency" onclick="updatePlan(this.dataset.plan);">Agency</label>
+          </li>
+          <li class="l-section__plan l-section__plan--bigagency">
+            <input type="radio" name="plan" id="bigagency">
+            <label for="bigagency" data-plan="bigagency" onclick="updatePlan(this.dataset.plan);">Big Agency</label>
+          </li>
         </ul>
       </div>
     </section>
@@ -98,23 +107,23 @@ layout: default
   </form>
 
   <aside class="l-checkout__details">
-    <div class="c-plan">
+    <div class="c-plan js-plan-info">
       <hgroup class="c-plan__title">
-        <h3 class="c-plan__name">Freelancer</h3>
+        <h3 class="c-plan__name js-plan-name">Freelancer</h3>
         <small class="c-plan__renewal">Automatically renews after 1 year</small>
       </hgroup>
 
-      <span class="c-plan__price">99</span>
+      <span class="c-plan__price js-plan-price">99</span>
 
       <ul class="c-plan__features">
-        <li class="c-plan__feature">{% include icons/check.svg %} Use on 5 client sites</li>
+        <li class="c-plan__feature">{% include icons/check.svg %} Use on <span class="js-plan-clients">5</span> client sites</li>
         <li class="c-plan__feature">{% include icons/check.svg %} Private repositories</li>
         <li class="c-plan__feature">{% include icons/check.svg %} Email support</li>
       </ul>
 
       <div class="c-plan__upgrade">
         <small>Need more client sites?</small>
-        <a class="c-plan__link" href="#">Switch to Agency Plan →</a>
+        <span class="c-plan__link js-plan-switch" data-plan="agency" onclick="updatePlan(this.dataset.plan);">Switch to <span class="js-plan-upgrade">Agency</span> Plan →</span>
       </div>
     </div>
 
