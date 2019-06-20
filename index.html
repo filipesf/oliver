@@ -1,1 +1,230 @@
-<!DOCTYPE html><html lang="en-gb"><meta charset="utf-8"><meta name="viewport" content="width=device-width, minimum-scale=1.0"><title>WP Pusher Checkout – Oliver – Filipe Fernandes</title><style> *,*::before,*::after{box-sizing:border-box;padding:0;margin:0;outline:none;will-change:auto}html{font-size:1em;line-height:1.5;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-size-adjust:100%;overflow-y:scroll;min-height:100%;scroll-behavior:smooth;background-color:#f3f6f9}h1,h2,h3,h4,h5,h6,hgroup,p,address,blockquote,figure,form,noscript,fieldset,ul,ol,dd,dl,pre,table,hr{margin-bottom:1.5rem}ul,ol{margin-left:1.5rem}li+li{margin-top:.5rem}li>ul,li>ol{margin-bottom:0;margin-left:1.5rem}abbr[title],dfn[title]{cursor:help}img{max-width:100%;font-style:italic;vertical-align:middle}body{font-size:1rem;line-height:1.5;font-family:"system-ui","-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;font-weight:400;color:#3e6281}h1,h2,h3,h4,h5,h6{font-weight:700}h1{font-size:2.281rem;line-height:1.315212626}h2{font-size:2.027rem;line-height:1.4800197336}h3{font-size:1.802rem;line-height:1.6648168701}h4{font-size:1.602rem;line-height:1.872659176}h5{font-size:1.424rem;line-height:1.0533707865}h6{font-size:1.266rem;line-height:1.1848341232}@media screen and (min-width: 50.8125em){h1{font-size:2.887rem;line-height:1.0391409768}h2{font-size:2.566rem;line-height:1.1691348402}h3{font-size:2.281rem;line-height:1.315212626}h4{font-size:2.027rem;line-height:1.4800197336}h5{font-size:1.802rem;line-height:1.6648168701}h6{font-size:1.602rem;line-height:1.872659176}}p{letter-spacing:.00625rem}p a{font-weight:700;color:#3e6281}p code{font-weight:500}small{font-size:.889rem;line-height:1.6872890889}a{text-decoration:underline;color:inherit}a:hover,a:active,a:focus{text-decoration:none}sup a{text-decoration:none}code{font-family:"Operator Mono","Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",monospace;font-style:normal;font-weight:600}@media screen and (min-width: 48em){code{font-weight:400}}blockquote{font-size:1.266rem;line-height:1.5;position:relative;padding:0;margin:0}blockquote:before{font-size:5.202rem;line-height:1.5;content:'“';position:absolute;top:-2rem;left:0;z-index:-1}.l-checkout{display:grid;grid-gap:2rem;grid-template-columns:auto 16.25rem;width:48rem;padding:2rem;margin:6rem auto;border-radius:.5rem;background-color:white;box-shadow:0 .25rem 1.5rem 0 rgba(5,39,68,0.1)}.l-checkout__details{border-left:3px solid #0879c9;padding-top:2rem;padding-bottom:2rem;padding-left:2rem;margin-top:-2rem;margin-bottom:-2rem}.l-checkout__headline{display:flex;align-items:center;justify-content:flex-start}.l-checkout__title{font-size:1.125rem;line-height:1.3333333333;margin:0 0 0 .5rem}.l-checkout__ruler{border:0;border-bottom:1px solid #e4f0f9;margin:2rem 0}.l-checkout__confirmation{font-size:.889rem;line-height:1.6872890889;line-height:1;margin:2rem 0}.l-checkout__confirmation .c-icon{margin-right:.5rem}.l-checkout__confirmation a{font-weight:700}.l-checkout__privacy{display:flex;align-items:center;justify-content:flex-start}.l-checkout__privacy input[type="checkbox"]{position:absolute;visibility:hidden;height:0;width:0}.l-checkout__privacy input[type="checkbox"]:checked ~ .c-icon--checkbox .b,.l-checkout__privacy input[type="checkbox"]:checked ~ .c-icon--checkbox .a{stroke:#0879c9}.l-checkout__help{display:flex;align-items:center;justify-content:flex-start;margin-bottom:1rem}.l-section{display:grid;grid-gap:.5rem;grid-template-columns:1.5rem auto;align-items:start}.l-section__step{font-size:.889rem;line-height:1.6872890889;text-align:center;font-weight:700;border-radius:100%;background-color:#0879c9;color:#f3f6f9}.l-section__title{font-size:1rem;line-height:1.5;margin:0 0 1rem 0}.l-section__plans{display:grid;grid-template-columns:33.33% 33.33% 33.33%;padding:0;margin:0;border:1px solid #ebeff2;border-radius:.25rem}.l-section__plan{font-size:.889rem;line-height:1.6872890889;text-align:center;padding:.25rem;margin:0;border-right:1px solid #ebeff2;list-style:none}.l-section__plan:last-of-type{border:0}.l-section__plan.is-active{font-weight:700;color:#0879c9}.l-section__plan label{cursor:pointer;width:100%;height:100%}.l-section__plan input{position:absolute;visibility:hidden;height:0;width:0}.l-section__plan input:checked ~ label{font-weight:700;color:#0879c9}.l-details{display:grid;grid-column-gap:2rem;grid-row-gap:1rem;grid-template-columns:auto auto;margin-bottom:1rem}.f-field{display:flex;flex-direction:column}.c-field__labels{margin-top:1rem;display:grid;grid-template-columns:10.1875rem 6.25rem 6.25rem}.c-field__inputs{display:grid;grid-template-columns:9.6875rem 6.25rem 6.25rem}.c-field__inputs{font-size:.79rem;line-height:1.8987341772;padding:0 .5rem;color:#3e6281;border:1px solid #ebeff2;border-radius:.1875rem;line-height:1}.c-field__inputs .f-text{border:none;padding-right:0;padding-left:0}.f-label{font-size:.79rem;line-height:1.8987341772;cursor:pointer}.f-text{font-size:.79rem;line-height:1.8987341772;padding:.5rem;color:#3e6281;border:1px solid #ebeff2;border-radius:.1875rem;line-height:1}.f-text::-webkit-input-placeholder{color:#ced7df}.f-text::-moz-placeholder{color:#ced7df}.f-text:-ms-input-placeholder{color:#ced7df}.f-text:-moz-placeholder{color:#ced7df}.f-text:focus{border-color:#3e6281}.f-text[type="email"]{width:19.75rem}.c-btn{font-size:1rem;line-height:1.5;transition:all 250ms ease;font-weight:700;display:block;width:100%;padding:1rem;border:0;border-radius:.25rem;background-color:#109e2a;color:white;box-shadow:inset 0 -4px 0 rgba(0,0,0,0.2);cursor:pointer}.c-btn:hover,.c-btn:active,.c-btn:focus{background-color:#0b701e}.c-icon{height:1.5rem;width:1.5rem}.c-icon--help,.c-icon--checkbox{height:1rem;width:1rem}.c-icon--help{fill:none;stroke:#0879c9;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.c-icon--check{height:.75rem;width:.75rem;fill:none;stroke:#0879c9;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.c-icon--cart{fill:none;stroke:#0879c9;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.c-nav{display:flex;align-items:center;justify-content:space-between}.c-nav__logo{display:flex;align-items:center;padding:1.5rem;margin:0}.c-nav__list{display:flex;align-items:center;padding:0 1.5rem;margin:0}.c-nav__item{list-style:none;margin:0}.c-nav__link{transition:all 250ms ease;padding:.5rem;text-decoration:none;color:#00497d}.c-nav__link:hover,.c-nav__link:active,.c-nav__link:focus{text-decoration:underline}.c-nav__link[href^="#account"]{padding-right:1rem;padding-left:1rem;margin-left:.5rem;border:1px solid #00497d;border-radius:3px}.c-nav__link[href^="#account"]:hover,.c-nav__link[href^="#account"]:active,.c-nav__link[href^="#account"]:focus{text-decoration:none;background-color:#00497d;color:#f3f6f9}.c-plan{padding-bottom:2rem;margin-bottom:2rem;border-bottom:1px solid #e4f0f9}.c-plan__title,.c-plan__name,.c-plan__renewal{margin:0}.c-plan__name{font-size:1.125rem;line-height:1.3333333333;color:#0879c9}.c-plan__renewal{font-size:.79rem;line-height:1.5;display:block;font-style:italic}.c-plan__price{font-size:3.653rem;line-height:1.2318642212;position:relative;display:block;padding-left:1rem;margin-top:1.5rem;margin-bottom:1.5rem;font-weight:700;line-height:1;color:#0879c9}.c-plan__price:before,.c-plan__price:after{font-size:1.125rem;line-height:1.3333333333;font-weight:300;position:absolute}.c-plan__price:before{content:'$';top:.5rem;left:0}.c-plan__price:after{content:'/year';bottom:.5rem}.c-plan__features{margin:1.5rem 0}.c-plan__feature{list-style:none;margin:0}.c-plan__feature .c-icon{margin-right:.5rem}.c-plan__link{font-size:.889rem;line-height:1.6872890889;display:block;font-weight:bold;color:#0879c9}.c-quote{padding:0;margin:0}.c-quote__text,.c-quote__author{font-size:.889rem;line-height:1.5;margin:0;color:#3e6281}.c-quote__text{font-style:italic}</style><nav class="c-nav"><figure class="c-nav__logo"> <img class="c-nav__img" src="./images/logo.png" /></figure><ul class="c-nav__list"><li class="c-nav__item"><a class="c-nav__link" href="#download">Download</a><li class="c-nav__item"><a class="c-nav__link" href="#learn-more">Learn more</a><li class="c-nav__item"><a class="c-nav__link" href="#pricing">Pricing</a><li class="c-nav__item"><a class="c-nav__link" href="#help">Help</a><li class="c-nav__item"><a class="c-nav__link" href="#account">Account</a></ul></nav><section class="l-checkout"> <form class="l-checkout__form"><hgroup class="l-checkout__headline" > <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <g transform="translate(-331 -175)"> <rect fill="transparent" width="24" height="24" transform="translate(331 175)" /> <g class="c-icon--cart" transform="translate(334 178)"> <ellipse cx="0.727" cy="0.727" rx="0.727" ry="0.727" transform="translate(6.091 14.818)" /> <ellipse cx="0.727" cy="0.727" rx="0.727" ry="0.727" transform="translate(14.091 14.818)" /><path d="M1,1H3.909l1.949,9.738a1.455,1.455,0,0,0,1.455,1.171h7.069a1.455,1.455,0,0,0,1.455-1.171L17,4.636H4.636" /> </g> </g> </svg><h1 class="l-checkout__title">Checkout</h1></hgroup><hr class="l-checkout__ruler"><section class="l-section"><div class="l-section__step">1</div><div class="l-section__content"><h4 class="l-section__title">Choose your plan:</h4><ul class="l-section__plans"><li class="l-section__plan"><input type="radio" name="plan" id="freelancer" checked><label for="freelancer">Freelancer</label><li class="l-section__plan"><input type="radio" name="plan" id="agency"><label for="agency">Agency</label><li class="l-section__plan"><input type="radio" name="plan" id="big-agency"><label for="big-agency">Big Agency</label></ul></div></section><hr class="l-checkout__ruler"><section class="l-section"><div class="l-section__step">2</div><div class="l-section__content"><h4 class="l-section__title">Your personal details:</h4><div class="l-details"><div class="f-field"> <label class="f-label" for="first-name">First name</label> <input class="f-text" type="text" id="first-name" placeholder="John" required></div><div class="f-field"> <label class="f-label" for="last-name">Last name</label> <input class="f-text" type="text" id="last-name" placeholder="Doe" required></div></div><div class="f-field"> <label class="f-label" for="email">Email</label> <input class="f-text" type="email" id="email" placeholder="john.doe@gmail.com" required></div></div></section><hr class="l-checkout__ruler"><section class="l-section"><div class="l-section__step">3</div><div class="l-section__content"><h4 class="l-section__title">Payment information:</h4><div class="f-field"> <label class="f-label" for="card-holder">Credit card holder</label> <input class="f-text" type="text" id="card-holder" placeholder="John Doe" required></div><div class="f-field f-field--card"><div class="c-field__labels"> <label class="f-label" for="card-number">Credit card number</label> <label class="f-label" for="expiry-date">Expiry date</label> <label class="f-label" for="security-number">Security code</label></div><div class="c-field__inputs"> <input class="f-text" type="number" id="card-number" placeholder="0000 0000 0000 0000" required> <input class="f-text" type="text" id="expiry-date" placeholder="dd/yyy" required> <input class="f-text" type="number" id="security-number" placeholder="000" required></div></div></div></section><hr class="l-checkout__ruler"><div class="l-checkout__confirmation"> <span class="l-checkout__help"> <svg class="c-icon c-icon--help" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"> <g transform="translate(-1 -1)"> <circle cx="8" cy="8" r="8" transform="translate(2 2)" /><path d="M9.09,8.6a2.4,2.4,0,0,1,4.664.8c0,1.6-2.4,2.4-2.4,2.4" transform="translate(-1.418 -0.999)" /><line transform="translate(10 14)" /> </g> </svg> <span>Need any help? Don’t hesitate to <a href="#">contact support</a>!</span> </span> <span class="l-checkout__privacy"> <input type="checkbox" id="privacy"> <svg class="c-icon c-icon--checkbox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"> <defs><style> .a { fill: transparent; stroke: #3e6281; } .a, .b { stroke-width: 2px; } .b, .d { fill: none; } .b { stroke: transparent; stroke-linecap: round; stroke-linejoin: round; } .c { stroke: none; }</style></defs> <g transform="translate(-331 -854)"> <g class="a" transform="translate(331 854)"> <rect class="c" width="16" height="16" rx="3" /> <rect class="d" x="1" y="1" width="14" height="14" rx="2" /> </g><path class="b" d="M14,6,7.125,15,4,10.909" transform="translate(330 851)" /> </g> </svg> <label for="privacy">Please accept our <a href="#">Privacy Policy</a> to proceed.</label></span></div><button class="c-btn">Subscribe me to WP Pusher</button> </form><aside class="l-checkout__details"><div class="c-plan"><hgroup class="c-plan__title"><h3 class="c-plan__name">Freelancer</h3><small class="c-plan__renewal">Automatically renews after 1 year</small></hgroup><span class="c-plan__price">99</span><ul class="c-plan__features"><li class="c-plan__feature"><svg class="c-icon c-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 11"><path d="M14,6,7.125,15,4,10.909" transform="translate(-3 -5)" /> </svg> Use on 5 client sites<li class="c-plan__feature"><svg class="c-icon c-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 11"><path d="M14,6,7.125,15,4,10.909" transform="translate(-3 -5)" /> </svg> Private repositories<li class="c-plan__feature"><svg class="c-icon c-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 11"><path d="M14,6,7.125,15,4,10.909" transform="translate(-3 -5)" /> </svg> Email support</ul><div class="c-plan__upgrade"> <small>Need more client sites?</small> <a class="c-plan__link" href="#">Switch to Agency Plan →</a></div></div><blockquote class="c-quote"><p class="c-quote__text">FTP is horrible to deal with. WP Pusher solves that issue, and the customer support is awesome!</p><strong class="c-quote__author">– Kirk Beard, Freelancer</strong></blockquote></aside></section>
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+  <title>WP Pusher Checkout – Oliver – Filipe Fernandes</title>
+
+  <style>
+    
+    *,*::before,*::after{box-sizing:border-box;padding:0;margin:0;outline:none;will-change:auto}html{font-size:1em;line-height:1.5;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-size-adjust:100%;overflow-y:scroll;min-height:100%;scroll-behavior:smooth;background-color:#f3f6f9}h1,h2,h3,h4,h5,h6,hgroup,p,address,blockquote,figure,form,noscript,fieldset,ul,ol,dd,dl,pre,table,hr{margin-bottom:1.5rem}ul,ol{margin-left:1.5rem}li+li{margin-top:.5rem}li>ul,li>ol{margin-bottom:0;margin-left:1.5rem}abbr[title],dfn[title]{cursor:help}img{max-width:100%;font-style:italic;vertical-align:middle}body{font-size:1rem;line-height:1.5;font-family:"system-ui","-apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;font-weight:400;color:#3e6281}h1,h2,h3,h4,h5,h6{font-weight:700}h1{font-size:2.281rem;line-height:1.315212626}h2{font-size:2.027rem;line-height:1.4800197336}h3{font-size:1.802rem;line-height:1.6648168701}h4{font-size:1.602rem;line-height:1.872659176}h5{font-size:1.424rem;line-height:1.0533707865}h6{font-size:1.266rem;line-height:1.1848341232}@media screen and (min-width: 50.8125em){h1{font-size:2.887rem;line-height:1.0391409768}h2{font-size:2.566rem;line-height:1.1691348402}h3{font-size:2.281rem;line-height:1.315212626}h4{font-size:2.027rem;line-height:1.4800197336}h5{font-size:1.802rem;line-height:1.6648168701}h6{font-size:1.602rem;line-height:1.872659176}}p{letter-spacing:.00625rem}p a{font-weight:700;color:#3e6281}p code{font-weight:500}small{font-size:.889rem;line-height:1.6872890889}a{text-decoration:underline;color:inherit}a:hover,a:active,a:focus{text-decoration:none}sup a{text-decoration:none}code{font-family:"Operator Mono","Inconsolata","Monaco","Consolas","Andale Mono","Bitstream Vera Sans Mono","Courier New",monospace;font-style:normal;font-weight:600}@media screen and (min-width: 48em){code{font-weight:400}}blockquote{font-size:1.266rem;line-height:1.5;position:relative;padding:0;margin:0}blockquote:before{font-size:5.202rem;line-height:1.5;content:'“';position:absolute;top:-2rem;left:0;z-index:-1}.l-checkout{display:grid;grid-gap:2rem;grid-template-columns:auto 16.25rem;width:48rem;padding:2rem;margin:6rem auto;border-radius:.5rem;background-color:white;box-shadow:0 .25rem 1.5rem 0 rgba(5,39,68,0.1)}.l-checkout__details{border-left:1px solid #e4f0f9;padding-top:2rem;padding-bottom:2rem;padding-left:2rem;margin-top:-2rem;margin-bottom:-2rem}.l-checkout__headline{display:flex;align-items:center;justify-content:flex-start}.l-checkout__title{font-size:1.125rem;line-height:1.3333333333;margin:0 0 0 .5rem}.l-checkout__ruler{border:0;border-bottom:1px solid #e4f0f9;margin:2rem 0}.l-checkout__confirmation{font-size:.889rem;line-height:1.6872890889;line-height:1;margin:2rem 0}.l-checkout__confirmation .c-icon{margin-right:.5rem}.l-checkout__confirmation a{font-weight:700}.l-checkout__privacy{display:flex;align-items:center;justify-content:flex-start}.l-checkout__privacy input[type="checkbox"]{position:absolute;visibility:hidden;height:0;width:0}.l-checkout__privacy input[type="checkbox"]:checked ~ .c-icon--checkbox .b,.l-checkout__privacy input[type="checkbox"]:checked ~ .c-icon--checkbox .a{stroke:#0879c9}.l-checkout__help{display:flex;align-items:center;justify-content:flex-start;margin-bottom:1rem}.l-section{display:grid;grid-gap:.5rem;grid-template-columns:1.5rem auto;align-items:start}.l-section__step{font-size:.889rem;line-height:1.6872890889;text-align:center;font-weight:700;border-radius:100%;background-color:#0879c9;color:#f3f6f9}.l-section__title{font-size:1rem;line-height:1.5;margin:0 0 1rem 0}.l-section__plans{display:grid;grid-template-columns:repeat(3, 33.33%);padding:0;margin:0;border:1px solid #ebeff2;border-radius:.25rem}.l-section__plan{font-size:.889rem;line-height:1.6872890889;display:flex;text-align:center;padding:.25rem;margin:0;border-right:1px solid #ebeff2;list-style:none;cursor:pointer}.l-section__plan:last-of-type{border:0}.l-section__plan.is-active{font-weight:700;color:#0879c9}.l-section__plan label{cursor:pointer;width:100%;height:100%}.l-section__plan input{position:absolute;visibility:hidden;height:0;width:0}.l-section__plan input:checked ~ label{font-weight:700;color:#0879c9}.l-section__plan--agency input:checked ~ label{color:#12b886}.l-section__plan--bigagency input:checked ~ label{color:#6741d9}.l-details{display:grid;grid-column-gap:2rem;grid-row-gap:1rem;grid-template-columns:auto auto;margin-bottom:1rem}.f-field{display:flex;flex-direction:column}.c-field__labels{margin-top:1rem;display:grid;grid-template-columns:10.1875rem 6.25rem 6.25rem}.c-field__inputs{display:grid;grid-template-columns:9.6875rem 6.25rem 6.25rem}.c-field__inputs{font-size:.79rem;line-height:1.8987341772;padding:0 .5rem;color:#3e6281;border:1px solid #ebeff2;border-radius:.1875rem;line-height:1}.c-field__inputs .f-text{border:none;padding-right:0;padding-left:0}.f-label{font-size:.79rem;line-height:1.8987341772;cursor:pointer}.f-text{font-size:.79rem;line-height:1.8987341772;padding:.5rem;color:#3e6281;border:1px solid #ebeff2;border-radius:.1875rem;line-height:1}.f-text::-webkit-input-placeholder{color:#ced7df}.f-text::-moz-placeholder{color:#ced7df}.f-text:-ms-input-placeholder{color:#ced7df}.f-text:-moz-placeholder{color:#ced7df}.f-text:focus{border-color:#3e6281}.f-text[type="email"]{width:19.75rem}.c-btn{font-size:1rem;line-height:1.5;transition:all 250ms ease;font-weight:700;display:block;width:100%;padding:1rem;border:0;border-radius:.25rem;background-color:#109e2a;color:white;box-shadow:inset 0 -4px 0 rgba(0,0,0,0.2);cursor:pointer}.c-btn:hover,.c-btn:active,.c-btn:focus{background-color:#0b701e}.c-icon{height:1.5rem;width:1.5rem}.c-icon--help,.c-icon--checkbox{height:1rem;width:1rem}.c-icon--help{fill:none;stroke:#0879c9;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.c-icon--check{height:.75rem;width:.75rem;fill:none;stroke:#0879c9;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.c-icon--cart{fill:none;stroke:#0879c9;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}.c-nav{display:flex;align-items:center;justify-content:space-between}.c-nav__logo{display:flex;align-items:center;padding:1.5rem;margin:0}.c-nav__list{display:flex;align-items:center;padding:0 1.5rem;margin:0}.c-nav__item{list-style:none;margin:0}.c-nav__link{transition:all 250ms ease;padding:.5rem;text-decoration:none;color:#00497d}.c-nav__link:hover,.c-nav__link:active,.c-nav__link:focus{text-decoration:underline}.c-nav__link[href^="#account"]{padding-right:1rem;padding-left:1rem;margin-left:.5rem;border:1px solid #00497d;border-radius:3px}.c-nav__link[href^="#account"]:hover,.c-nav__link[href^="#account"]:active,.c-nav__link[href^="#account"]:focus{text-decoration:none;background-color:#00497d;color:#f3f6f9}.c-plan{padding-bottom:2rem;margin-bottom:2rem;border-bottom:1px solid #e4f0f9}.c-plan__title,.c-plan__name,.c-plan__renewal{margin:0}.c-plan__name{font-size:1.125rem;line-height:1.3333333333;color:#0879c9}.c-plan__renewal{font-size:.79rem;line-height:1.5;display:block;font-style:italic}.c-plan__price{font-size:3.653rem;line-height:1.2318642212;position:relative;display:block;padding-left:1rem;margin-top:1.5rem;margin-bottom:1.5rem;font-weight:700;line-height:1;color:#0879c9}.c-plan__price:before,.c-plan__price:after{font-size:1.125rem;line-height:1.3333333333;font-weight:300;position:absolute}.c-plan__price:before{content:'$';top:.5rem;left:0}.c-plan__price:after{content:'/year';bottom:.5rem}.c-plan__features{margin:1.5rem 0}.c-plan__feature{list-style:none;margin:0}.c-plan__feature .c-icon{margin-right:.5rem}.c-plan__link{font-size:.889rem;line-height:1.6872890889;display:block;font-weight:bold;text-decoration:underline;color:#0879c9;cursor:pointer}.c-plan__link:hover,.c-plan__link:active,.c-plan__link:focus{text-decoration:none}.c-plan--agency .c-plan__name,.c-plan--agency .c-plan__price,.c-plan--agency .c-plan__link,.c-plan--agency .c-icon--check{color:#12b886;stroke:#12b886}.c-plan--agency .c-plan__feature:first-of-type{font-weight:bold}.c-plan--bigagency .c-plan__name,.c-plan--bigagency .c-plan__price,.c-plan--bigagency .c-icon--check{color:#6741d9;stroke:#6741d9}.c-plan--bigagency .c-plan__features{margin-bottom:0}.c-plan--bigagency .c-plan__feature:first-of-type{font-weight:bold}.c-plan--bigagency .c-plan__upgrade{display:none}.c-quote{padding:0;margin:0}.c-quote__text,.c-quote__author{font-size:.889rem;line-height:1.5;margin:0;color:#3e6281}.c-quote__text{font-style:italic}
+
+  </style>
+</head>
+
+  <body>
+    <nav class="c-nav">
+
+  <figure class="c-nav__logo">
+    <img class="c-nav__img" src="./images/logo.png" />
+  </figure>
+
+  <ul class="c-nav__list">
+    <li class="c-nav__item"><a class="c-nav__link" href="#download">Download</a></li>
+    <li class="c-nav__item"><a class="c-nav__link" href="#learn-more">Learn more</a></li>
+    <li class="c-nav__item"><a class="c-nav__link" href="#pricing">Pricing</a></li>
+    <li class="c-nav__item"><a class="c-nav__link" href="#help">Help</a></li>
+    <li class="c-nav__item"><a class="c-nav__link" href="#account">Account</a></li>
+  </ul>
+
+</nav>
+
+    <section class="l-checkout">
+  <form class="l-checkout__form">
+    <hgroup class="l-checkout__headline" >
+      <svg class="c-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <g transform="translate(-331 -175)">
+    <rect fill="transparent" width="24" height="24" transform="translate(331 175)" />
+    <g class="c-icon--cart" transform="translate(334 178)">
+      <ellipse cx="0.727" cy="0.727" rx="0.727" ry="0.727" transform="translate(6.091 14.818)" />
+      <ellipse cx="0.727" cy="0.727" rx="0.727" ry="0.727" transform="translate(14.091 14.818)" />
+      <path d="M1,1H3.909l1.949,9.738a1.455,1.455,0,0,0,1.455,1.171h7.069a1.455,1.455,0,0,0,1.455-1.171L17,4.636H4.636" />
+    </g>
+  </g>
+</svg>
+
+      <h1 class="l-checkout__title">Checkout</h1>
+    </hgroup>
+
+    <hr class="l-checkout__ruler">
+
+    <section class="l-section">
+      <div class="l-section__step">1</div>
+
+      <div class="l-section__content">
+        <h4 class="l-section__title">Choose your plan:</h4>
+
+        <ul class="l-section__plans">
+          <li class="l-section__plan">
+            <input type="radio" name="plan" id="freelancer" checked>
+            <label for="freelancer" data-plan="freelancer" onclick="updatePlan(this.dataset.plan);">Freelancer</label>
+          </li>
+          <li class="l-section__plan l-section__plan--agency">
+            <input type="radio" name="plan" id="agency">
+            <label for="agency" data-plan="agency" onclick="updatePlan(this.dataset.plan);">Agency</label>
+          </li>
+          <li class="l-section__plan l-section__plan--bigagency">
+            <input type="radio" name="plan" id="bigagency">
+            <label for="bigagency" data-plan="bigagency" onclick="updatePlan(this.dataset.plan);">Big Agency</label>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <hr class="l-checkout__ruler">
+
+    <section class="l-section">
+      <div class="l-section__step">2</div>
+
+      <div class="l-section__content">
+        <h4 class="l-section__title">Your personal details:</h4>
+
+        <div class="l-details">
+          <div class="f-field">
+            <label class="f-label" for="first-name">First name</label>
+            <input class="f-text" type="text" id="first-name" placeholder="John" required>
+          </div>
+
+          <div class="f-field">
+            <label class="f-label" for="last-name">Last name</label>
+            <input class="f-text" type="text" id="last-name" placeholder="Doe" required>
+          </div>
+        </div>
+
+          <div class="f-field">
+            <label class="f-label" for="email">Email</label>
+            <input class="f-text" type="email" id="email" placeholder="john.doe@gmail.com" required>
+          </div>
+      </div>
+    </section>
+
+    <hr class="l-checkout__ruler">
+
+    <section class="l-section">
+      <div class="l-section__step">3</div>
+
+      <div class="l-section__content">
+        <h4 class="l-section__title">Payment information:</h4>
+
+        <div class="f-field">
+          <label class="f-label" for="card-holder">Credit card holder</label>
+          <input class="f-text" type="text" id="card-holder" placeholder="John Doe" required>
+        </div>
+
+        <div class="f-field f-field--card">
+          <div class="c-field__labels">
+            <label class="f-label" for="card-number">Credit card number</label>
+            <label class="f-label" for="expiry-date">Expiry date</label>
+            <label class="f-label" for="security-number">Security code</label>
+          </div>
+
+          <div class="c-field__inputs">
+            <input class="f-text" type="number" id="card-number" placeholder="0000 0000 0000 0000" required>
+            <input class="f-text" type="text" id="expiry-date" placeholder="dd/yyy" required>
+            <input class="f-text" type="number" id="security-number" placeholder="000" required>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="l-checkout__ruler">
+
+    <div class="l-checkout__confirmation">
+      <span class="l-checkout__help">
+        <svg class="c-icon c-icon--help" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+  <g transform="translate(-1 -1)">
+    <circle cx="8" cy="8" r="8" transform="translate(2 2)" />
+    <path d="M9.09,8.6a2.4,2.4,0,0,1,4.664.8c0,1.6-2.4,2.4-2.4,2.4" transform="translate(-1.418 -0.999)" />
+    <line transform="translate(10 14)" />
+  </g>
+</svg>
+
+        <span>Need any help? Don’t hesitate to <a href="#">contact support</a>!</span>
+      </span>
+      <span class="l-checkout__privacy">
+        <input type="checkbox" id="privacy">
+        <svg class="c-icon c-icon--checkbox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+  <defs>
+    <style>
+    .a {
+      fill: transparent;
+      stroke: #3e6281;
+    }
+
+    .a,
+    .b {
+      stroke-width: 2px;
+    }
+
+    .b,
+    .d {
+      fill: none;
+    }
+
+    .b {
+      stroke: transparent;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .c {
+      stroke: none;
+    }
+
+    </style>
+  </defs>
+  <g transform="translate(-331 -854)">
+    <g class="a" transform="translate(331 854)">
+      <rect class="c" width="16" height="16" rx="3" />
+      <rect class="d" x="1" y="1" width="14" height="14" rx="2" />
+    </g>
+    <path class="b" d="M14,6,7.125,15,4,10.909" transform="translate(330 851)" />
+  </g>
+</svg>
+
+        <label for="privacy">Please accept our <a href="#">Privacy Policy</a> to proceed.</label></span>
+    </div>
+
+    <button class="c-btn">Subscribe me to WP Pusher</button>
+  </form>
+
+  <aside class="l-checkout__details">
+    <div class="c-plan js-plan-info">
+      <hgroup class="c-plan__title">
+        <h3 class="c-plan__name js-plan-name">Freelancer</h3>
+        <small class="c-plan__renewal">Automatically renews after 1 year</small>
+      </hgroup>
+
+      <span class="c-plan__price js-plan-price">99</span>
+
+      <ul class="c-plan__features">
+        <li class="c-plan__feature"><svg class="c-icon c-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 11">
+  <path d="M14,6,7.125,15,4,10.909" transform="translate(-3 -5)" />
+</svg>
+ Use on <span class="js-plan-clients">5</span> client sites</li>
+        <li class="c-plan__feature"><svg class="c-icon c-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 11">
+  <path d="M14,6,7.125,15,4,10.909" transform="translate(-3 -5)" />
+</svg>
+ Private repositories</li>
+        <li class="c-plan__feature"><svg class="c-icon c-icon--check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 11">
+  <path d="M14,6,7.125,15,4,10.909" transform="translate(-3 -5)" />
+</svg>
+ Email support</li>
+      </ul>
+
+      <div class="c-plan__upgrade">
+        <small>Need more client sites?</small>
+        <span class="c-plan__link js-plan-switch" data-plan="agency" onclick="updatePlan(this.dataset.plan);">Switch to <span class="js-plan-upgrade">Agency</span> Plan →</span>
+      </div>
+    </div>
+
+    <blockquote class="c-quote">
+      <p class="c-quote__text">FTP is horrible to deal with. WP Pusher solves that issue, and the customer support is awesome!</p>
+      <strong class="c-quote__author">– Kirk Beard, Freelancer</strong>
+    </blockquote>
+  </aside>
+</section>
+
+  </body>
+</html>
