@@ -97,10 +97,11 @@ layout: default
         {% include icons/help.svg %}
         <span>Need any help? Don’t hesitate to <a href="#">contact support</a>!</span>
       </span>
-      <span class="l-checkout__privacy">
+      <label class="l-checkout__privacy" for="privacy">
         <input type="checkbox" id="privacy">
         {% include icons/checkbox.svg %}
-        <label for="privacy">Please accept our <a href="#">Privacy Policy</a> to proceed.</label></span>
+        <span>Please accept our <a href="#">Privacy Policy</a> to proceed.</span>
+      </label>
     </div>
 
     <button class="c-btn">Subscribe me to WP Pusher</button>
@@ -112,6 +113,8 @@ layout: default
         <h3 class="c-plan__name js-plan-name">Freelancer</h3>
         <small class="c-plan__renewal">Automatically renews after 1 year</small>
       </hgroup>
+
+      <p class="c-plan__description">Deploy your plugins and themes directly from your Git environment and never again copy files over FTP.</p>
 
       <span class="c-plan__price js-plan-price">99</span>
 

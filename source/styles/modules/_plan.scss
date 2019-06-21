@@ -6,6 +6,10 @@
   padding-bottom: size(4);
   margin-bottom: size(4);
   border-bottom: 1px solid color(decorator, div);
+
+  * {
+    @include transition(default);
+  }
 }
 
 .c-plan__title,
@@ -59,6 +63,13 @@
     content: '/year';
     bottom: size(1);
   }
+}
+
+
+
+.c-plan__description {
+  @include type-scale(-2, 0);
+  margin-top: size(1);
 }
 
 
