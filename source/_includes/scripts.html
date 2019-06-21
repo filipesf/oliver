@@ -46,4 +46,12 @@ function updatePlan(planName) {
     }
   });
 }
+
+function formatCC(event) {
+  return event.value = event.value.toString().replace(/\B(?=(\d{4})+(?!\d))/g, " ");
+}
+
+function formatDate(event) {
+  return event.value = event.value.toString().replace(/\B(?=(\d{2})+(?!\d))/g, "/");
+}
 </script>
