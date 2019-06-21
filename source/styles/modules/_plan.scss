@@ -8,7 +8,7 @@
   border-bottom: 1px solid color(decorator, div);
 
   * {
-    @include transition(default);
+    @include transition(color);
   }
 }
 
